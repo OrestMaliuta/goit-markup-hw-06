@@ -1096,14 +1096,14 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 0.53;
         /* identical to box height, or 188% */
     
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-        padding: 10px 0px 10px 28px;
+        padding: 13px 28px 13px 28px;
         color: #FFFFFF;
         
 }
@@ -1136,3 +1136,12 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
 
     color: #FFFFFF;
 }
+
+.subscribe-icon { 
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    
