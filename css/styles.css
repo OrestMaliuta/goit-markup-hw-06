@@ -1054,7 +1054,7 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
         margin-left: auto;
         display: flex;
         align-items: center;
-        justify-content: ;
+       
 }  
 
 .modal-icon-close {
@@ -1067,18 +1067,57 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
     
 }
 
-.modal-close-btn { }
 
 
 
+.modal h2 { 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;}
+
+.js-speaker-form label { 
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            /* identical to box height */
+        
+            letter-spacing: 0.01em;
+        
+            color: #757575;
+}
+
+.js-speaker-form input { 
+
+        width: 448px;
+        height: 40px;
+        
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+}
+
+.js-speaker-form { 
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment { 
+    width: 450px;
+    height: 120px;
+}
 
 
 
-
-
-
-
-
+/*------------------------------SUBSCRIBE EMAIL FOOTER ---------------------------*/
 .subscribe-tg-form {
     margin-left: 93px;
     width: auto;
@@ -1144,4 +1183,4 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
     text-align: center;
     width: 24px;
     height: 24px;
-    
+}
