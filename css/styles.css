@@ -1056,6 +1056,25 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
         align-items: center;
        
 }  
+.modal-close-btn:hover { 
+    border-color: var(--accent-color);
+    transition: 250ms var(--timing-function);
+   
+}
+.modal-close-btn:hover + .modal-icon-close {
+    fill: var(--accent-color);
+    transition: 250ms var(--timing-function);
+}
+.modal-close-btn:focus {
+    border-color: var(--accent-color);
+    transition: 250ms var(--timing-function);
+    outline: none;
+}
+
+.modal-close-btn:focus + .modal-icon-close { 
+    fill: var(--accent-color);
+    transition: 250ms var(--timing-function);
+}
 
 .modal-icon-close {
     
@@ -1079,44 +1098,163 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;}
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.js-speaker-form label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+ 
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal-input {      
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    
+}
+.modal-input:focus { 
+    border-color: var(--accent-color);
+    outline: none;
+    transition: 250ms var(--timing-function);
+    
+}
+.modal-input:focus + .modal-icons { 
+    fill: var(--accent-color);
+    transition: 250ms var(--timing-function);
+}
+
+.modal-input:hover {
+    border-color: var(--accent-color);
+    transition: 250ms var(--timing-function);
+}
+
+.modal-input:hover + .modal-icons {
+    fill: var(--accent-color);
+    transition: 250ms var(--timing-function);
+}
+
+
+.js-speaker-form input:last-child { 
+    margin: 0px;
+}
+
 
 .js-speaker-form label { 
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-            /* identical to box height */
-        
-            letter-spacing: 0.01em;
-        
-            color: #757575;
+ 
+    margin-bottom: 4px;
+}
+.js-speaker-form label:last-child {
+    margin: 0px;
+}
+.modal-input {
+    height: 40px;
 }
 
-.js-speaker-form input { 
 
-        width: 448px;
-        height: 40px;
-        
-    
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-}
-
-.js-speaker-form { 
+.js-speaker-form {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.comment { 
-    width: 450px;
+
+.comment-textarea {
+    resize: none;
+    width: 448px;
     height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.input-wrap { 
+    position: relative;
+}
+.modal-icons { 
+   width: 12px;
+   height: 12px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translate(-0% , -60%);
+}
+/*--------------------------------Checkbox---------------------------------*/
+
+.policy-label { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color:var(--tittle-text-color)
+}
+
+.comment-textarea:focus { 
+    border-color: var(--accent-color);
+    outline: none;
+    transition: 250ms var(--timing-function);
+}
+
+.comment-textarea:hover {
+    border-color: var(--accent-color);
+    transition: 250ms var(--timing-function);
 }
 
 
 
+/*------------------------btn-from-submit------------------------*/
+
+
+.btn-from-submit {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 200px;
+    height: 50px;
+    padding: 10px 52px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.btn-from-submit:hover { 
+    background-color: steelblue;
+    transition: 250ms var(--timing-function);
+}
 /*------------------------------SUBSCRIBE EMAIL FOOTER ---------------------------*/
 .subscribe-tg-form {
     margin-left: 93px;
@@ -1147,6 +1285,9 @@ h1 , h2 ,h3 , h4, h5, h6 , p ,ul {
         
 }
 
+.modal-input { 
+    padding-left: 35px;
+}
 .subscribe-tg-form input  {
     width: 358px;
     height: 50px;

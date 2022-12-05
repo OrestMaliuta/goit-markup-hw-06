@@ -591,20 +591,58 @@
 
             <h2>Залиште свої дані, ми вам передзвонимо</h2>
             <form class="js-speaker-form">
+                
                 <label for="name">Ім'я</label>
-                <br>
-                <input type="text" name="name" id="name" autocomplete="on">
-                <br>
+                <div class="input-wrap">
+                <input type="text" class="modal-input" placeholder="Андрій Андрійович" name="name" id="name" autocomplete="on">
+                    <svg class="modal-icons">
+                        <use href="./images/icons-modal.svg#icon-username" width="12" height="12"></use>
+                    </svg>
+                </input>
+                </div>
+
+                
                 <label for="tel">Телефон</label>
-                <br>
-                <input type="tel" name="tel" id="tel" autocomplete="on">
-                <br>
-                <label for="mail">Пошта</label>
-                <br>
-                <input type="email" name="mail" id="mail" autocomplete="on">
-                <br>
-                <label for="text">Коментар</label>
-                <input type="text" class="comment">
+                <div class="input-wrap">
+                    <input type="tel" class="modal-input" placeholder="(+380) 96-111-11-11" name="tel" id="tel" autocomplete="on">
+                        <svg class="modal-icons">
+                            <use href="./images/icons-modal.svg#icon-tel" width="12" height="12"></use>
+                        </svg>
+                    </input>
+                </div>
+                
+                
+                    <label for="mail">Пошта</label>
+                    <div class="input-wrap">
+                        <input type="email" class="modal-input" placeholder="example@gmail.com" name="mail" id="mail" autocomplete="on">
+                            <svg class="modal-icons">
+                                <use href="./images/icons-modal.svg#icon-mail" width="12" height="12"></use>
+                            </svg>
+                        </input>    
+                    </div>
+
+
+                <label for="comment">Коментар</label>
+                <textarea class="comment-textarea" name="comment" id="comment" cols="30" rows="8" placeholder="Введіть текст"></textarea>
+                
+
+               
+                    
+                    <label class="policy-label" for="policy"> 
+                        <input 
+                        class="checkbox-input " 
+                        type="checkbox" 
+                        name="policy" 
+                        id="policy">
+                        
+                    Погоджуюся з розсилкою та приймаю
+                    
+                    <a href="2323">Умовами договору  </a>
+                    </label>
+             
+
+
+                <button type="submit" class="btn-from-submit">Відправити</button>
 
             </form>
                 
