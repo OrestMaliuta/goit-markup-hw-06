@@ -555,8 +555,8 @@
             <form class="subscribe-tg-form">
 
                 <label for="mail">Підпишіться на розсилку</label>
-                <div class="covn">
-                    <input type="email" name="mail" id="mail" placeholder="Email">
+                <div class="subscribe-box">
+                    <input type="email" name="mail" id="mail" required placeholder="Email">
 
                     
                         <button type="submit">Підписатися
@@ -592,9 +592,9 @@
             <h2>Залиште свої дані, ми вам передзвонимо</h2>
             <form class="js-speaker-form">
                 
-                <label for="name">Ім'я</label>
+                <label for="name" class="form-label">Ім'я</label>
                 <div class="input-wrap">
-                    <input type="text" class="modal-input" placeholder="Андрій Андрійович" name="name" id="name" autocomplete="on">
+                    <input type="text" class="modal-input" placeholder="Андрій Андрійович" name="name" id="name" required  autocomplete="on">
                         <svg class="modal-icons">
                             <use href="./images/icons-modal.svg#icon-username" width="12" height="12"></use>
                         </svg>
@@ -604,7 +604,7 @@
                 
                 <label class="form-label" for="tel">Телефон</label>
                 <div class="input-wrap">
-                    <input type="tel" class="modal-input" placeholder="(+380) 96-111-11-11" name="tel" id="tel" autocomplete="on">
+                    <input type="tel" class="modal-input" placeholder="(+380) 96-111-11-11" name="tel" id="tel" required  autocomplete="on">
                         <svg class="modal-icons">
                             <use href="./images/icons-modal.svg#icon-tel" width="12" height="12"></use>
                         </svg>
@@ -612,9 +612,9 @@
                 </div>
                 
                 
-                    <label class="form-label" for="mail">Пошта</label>
+                    <label class="form-label" for="email">Пошта</label>
                     <div class="input-wrap">
-                        <input type="email" class="modal-input" placeholder="example@gmail.com" name="mail" id="mail" autocomplete="on">
+                        <input type="email" class="modal-input" placeholder="example@gmail.com" name="email" id="email" required autocomplete="on">
                             <svg class="modal-icons">
                                 <use href="./images/icons-modal.svg#icon-mail" width="12" height="12"></use>
                             </svg>
